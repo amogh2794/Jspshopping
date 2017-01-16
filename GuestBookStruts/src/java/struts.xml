@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE struts PUBLIC'-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN''http://struts.apache.org/dtds/struts-2.0.dtd'>
+
+<struts>
+    <package name="guestbook" extends="struts-default">
+        <inteceptors>
+            <interceptor name="actiontimer" class="myApp.ActionTimer" />
+            <interceptor-stack name="myStack">
+                <interceptor-ref name="defaultStack" />
+                <interceptor-ref name="actiontimer" />
+            </interceptor-stack>
+        </inteceptors>
+        <default-interceptor-ref name="myStack" />
+        <action name="GuestBook">
+            <result>/GuestBookEntry.jsp</result>
+        </action>
+        <action name="GuestBookSuccess" class="myApp.GuestBookAction">
+            <result name="input">/GuestBookEntry.jsp</result>
+            <result name="success">/GuestBookView.jsp</result>
+        </action>
+    </package>
+</struts>
