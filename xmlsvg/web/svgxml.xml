@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+   <rect x="50" y="100" height="100" width="100" style="stroke:#ff0000; fill:yellow"/>
+    <text x="55" y="120" fill="black">Rectangle</text>
+    <circle cx="250" cy="150" r="40" style="stroke:#ff0000; fill:yellow"/> 
+    <text x="225" y="150" fill="black">Circle</text>    
+    <ellipse cx="450" cy="150" rx="100" ry="50" style="fill:yellow;stroke:red;stroke-width:2" />
+    <text x="450" y="150" fill="black">Ellipse</text> 
+    <line x1="650" y1="150" x2="800" y2="150" style="stroke:red;stroke-width:2" />
+    <text x="700" y="165" fill="black">Line</text> 
+    <polyline points="50,250 40,250 50,250 120,400 120,400 150,250" style="fill:none;stroke:red;stroke-width:3" />  
+    <text x="55" y="450" fill="black">Polyline</text> 
+    <polygon points="250,250 300,400 200,400" style="fill:yellow;stroke:red;stroke-width:1" />
+    <text x="225" y="375" fill="black">Polygon</text> 
+    <rect x="350" y="250" height="100" width="200" rx="5" ry="5" style="stroke:#ff0000; fill:yellow" />
+    <text x="355" y="300" fill="black">Rounded Rectangle</text> 
+</svg>
